@@ -1,0 +1,63 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteUser",
+                "iam:ChangePassword"
+            ],
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetAccountPasswordPolicy",
+                "iam:ListAccountAliases",
+                "iam:ListUsers",
+                "iam:GetAccountSummary"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "iam:CreateUser",
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": "iam:CreateLoginProfile",
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteAccessKey",
+                "iam:AttachUserPolicy",
+                "iam:ListServiceSpecificCredentials",
+                "iam:ListUserPolicies",
+                "iam:ListMFADevices",
+                "iam:ListSigningCertificates",
+                "iam:CreateAccessKey",
+                "iam:CreateLoginProfile",
+                "iam:ListSSHPublicKeys",
+                "iam:ListPolicyVersions",
+                "iam:ListGroupsForUser",
+                "iam:ListAttachedUserPolicies",
+                "iam:DetachUserPolicy",
+                "iam:GetLoginProfile",
+                "iam:DeleteLoginProfile",
+                "iam:ListAccessKeys"
+            ],
+            "Resource": [
+                "arn:aws:iam::934006822548:user/*",
+                "arn:aws:iam::934006822548:policy/*"
+            ]
+        }
+    ]
+}
