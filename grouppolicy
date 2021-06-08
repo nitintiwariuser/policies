@@ -1,0 +1,94 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateGroup",
+                "iam:AddUserToGroup",
+                "iam:AttachGroupPolicy"
+            ],
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "iam:GetGroup",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "iam:ListAttachedGroupPolicies",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": "iam:ListGroupPolicies",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListUserPolicies",
+                "iam:GetUser"
+            ],
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor5",
+            "Effect": "Allow",
+            "Action": "iam:ListAttachedUserPolicies",
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor6",
+            "Effect": "Allow",
+            "Action": "iam:ListGroupsForUser",
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor7",
+            "Effect": "Allow",
+            "Action": "iam:DetachGroupPolicy",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor8",
+            "Effect": "Allow",
+            "Action": "iam:RemoveUserFromGroup",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor9",
+            "Effect": "Allow",
+            "Action": "iam:DeleteGroup",
+            "Resource": "arn:aws:iam::934006822548:group/*"
+        },
+        {
+            "Sid": "VisualEditor10",
+            "Effect": "Allow",
+            "Action": "iam:GetPolicyVersion",
+            "Resource": "arn:aws:iam::934006822548:policy/*"
+        },
+        {
+            "Sid": "VisualEditor11",
+            "Effect": "Allow",
+            "Action": "iam:AttachUserPolicy",
+            "Resource": "arn:aws:iam::934006822548:user/*"
+        },
+        {
+            "Sid": "VisualEditor12",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListPolicies",
+                "iam:ListUsers",
+                "iam:ListGroups"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
