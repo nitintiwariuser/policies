@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1624099443166",
+    "Statement": [
+        {
+            "Sid": "Stmt1624098467971",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::pythonq/*"
+        },
+        {
+            "Sid": "Stmt1624098799052",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::pythonq/*",
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
+        },
+        {
+            "Sid": "Stmt1624099439377",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::pythonq/*",
+            "Condition": {
+                "StringNotEquals": {
+                    "s3:x-amz-server-side-encryption": "aws:kms"
+                }
+            }
+        }
+    ]
+}
